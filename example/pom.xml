@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
   <groupId>com.suyanliu</groupId>
-  <artifactId>example</artifactId>
+  <artifactId>lsy-mini-example</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>example</name>
+  <name>lsy-mini-example</name>
   
   
   	<parent>
@@ -22,6 +22,14 @@
 	</properties>
 
 	<dependencies>
+	
+		<dependency>
+		    <groupId>opencv</groupId>
+		    <artifactId>opencv</artifactId>
+		    <version>4.0.0-0</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
@@ -34,7 +42,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
